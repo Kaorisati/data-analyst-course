@@ -32,7 +32,7 @@ while max(score)<4 or abs(score[0]-score[1])>2:
     print(f"=========Round {round}!=========")
    
     if playerOne == playerTwo:
-        print("Draw! Play again") #deberia poder jugarse de nuevo en esta ronda
+        print("Draw! Play again") 
 
     elif condition1 or condition2 or condition3:
         score[0] += 1
@@ -41,5 +41,5 @@ while max(score)<4 or abs(score[0]-score[1])>2:
         score[1] +=1
         print(f"Player 1: {playerOne} \nPlayer 2: {playerTwo}\n   Player 2 wins!")
 
-print (f'jugador {score.index(max(score))+1}')
-#se podria agregar quien es el ganador general
+print (f'Ganó el jugador {score.index(max(score))+1}')
+
